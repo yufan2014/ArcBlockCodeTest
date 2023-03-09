@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mTvTag"
+    android:layout_width="wrap_content"
+    android:layout_height="28dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:background="@drawable/selector_f7f8fa_to_1d67fc_point"
+    android:gravity="center"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    tools:text="tag"
+    android:textColor="@color/selector_66667b_to_ffffff_textcolor"
+    android:textSize="13sp" />

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ArcBlockCodeTest</string>
+    <string name="get_info_error">获取信息失败</string>
+    <string name="check_net">请检查网络</string>
+    <string name="retry">请重试</string>
+    <string name="no_data">暂无数据</string>
+</resources>
