@@ -1,5 +1,6 @@
 package com.arcblock.codetest
 
+import android.text.TextUtils
 import android.view.View
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -76,7 +77,11 @@ class MainActivity : BaseActivity() {
             }
 
             override fun onItemClick(position: Int, item: BlogBeanItem) {
-                WebActivity.startWeb(this@MainActivity,BASE_URL.plus(item.frontmatter?.path))
+                var url = BASE_URL
+                if(!TextUtils.isEmpty(item.frontmatter?.path)) {
+                    url = BASE_URL.plus(item.frontmatter?.path)
+                }
+                WebActivity.startWeb(this@MainActivity,url)
             }
 
         })
@@ -117,7 +122,7 @@ class MainActivity : BaseActivity() {
 
             override fun onNext(t: List<BlogBeanItem>) {
 
-
+                //todo 列表非常大可采取分页方式，分类很多可采取接口请求方式，排序分类可放在后端接口处理
                 if(t != null && t.size>0) {
                     data = t
                     tagData.clear()

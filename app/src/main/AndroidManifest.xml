@@ -31,6 +31,7 @@
 
                 <data
                     android:host="abtwallet.io"
+                    android:path="/i"
                     android:scheme="abt"></data>
             </intent-filter>
         </activity>
